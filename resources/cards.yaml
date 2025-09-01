@@ -1,0 +1,10 @@
+characterCards:
+  - id: 1
+    name: "钟离"
+    element: "岩"
+    hp: 12
+    energyNeeds: 3
+    skills:
+      - type: NORMAL_ATTACK
+      - type: ELEMENTAL_SKILL
+      - type: ELEMENTAL_BURST

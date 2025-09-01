@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/game_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    timeout: 3000ms
+debug: true
+logging:
+  level:
+    org.springframework: DEBUG
+    com.game: DEBUG
+
+mybatis-plus:
+  mapper-locations:  classpath:com/game/mapper/*.xml
+  type-aliases-package: com.game.dto
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+game:
+  crypto:
+    aes:
+      key: 12345678901234567890123456789012
+
