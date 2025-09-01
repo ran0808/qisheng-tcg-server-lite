@@ -51,5 +51,5 @@
 - Maven 3.9+（依赖管理）；
 ### 4.2 本地部署步骤
 1. **克隆代码**：
-   git clone https://github.com/你的GitHub用户名/你的项目名.git
-   cd 你的项目名
+   git clone https://github.com/ran0808/qisheng-tcg-server-lite.git
+   cd gateway-core
