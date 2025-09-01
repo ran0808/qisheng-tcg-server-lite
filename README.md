@@ -50,6 +50,15 @@
 - MySQL 8.0（需提前创建数据库，如game_db）；
 - Maven 3.9+（依赖管理）；
 ### 4.2 本地部署步骤
-1. **克隆代码**：
-   git clone https://github.com/ran0808/qisheng-tcg-server-lite.git
-   cd gateway-core
+# 克隆项目仓库到本地
+git clone https://github.com/ran0808/qisheng-tcg-server-lite.git
+
+# 进入网关核心模块（gateway-core）的目录
+cd qisheng-tcg-server-lite/gateway-core
+
+# 编译项目生成可执行JAR
+mvn clean package -DskipTests
+
+# 启动网关服务
+java -jar target/gateway-core-1.0-SNAPSHOT.jar
+
